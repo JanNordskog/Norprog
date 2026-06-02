@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hva er god mobiloptimalisering? Googles krav forklart | Norprog</title>
+  <meta name="description" content="Google bruker mobilversjonen av nettsiden din for å rangere den i søk. Lær hva Google krever, hva responsive design betyr i praksis, og hva som skjer om du ikke er mobiloptimalisert.">
+  <meta name="author" content="Norprog">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://norprog.no/mobiloptimalisering.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Norprog">
+  <meta property="og:title" content="Hva er god mobiloptimalisering? Googles krav forklart">
+  <meta property="og:description" content="Google bruker mobilversjonen av nettsiden din for å rangere den. Lær hva som kreves og hva som skjer om du ikke er mobiloptimalisert.">
+  <meta property="og:url" content="https://norprog.no/mobiloptimalisering.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=630&q=85&auto=format&fit=crop">
+  <meta property="og:locale" content="nb_NO">
+  <meta property="article:published_time" content="2025-06-02">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hva er god mobiloptimalisering? Googles krav forklart">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=630&q=85&auto=format&fit=crop">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Hva er god mobiloptimalisering? Googles krav forklart","author":{"@type":"Organization","name":"Norprog","url":"https://norprog.no"},"publisher":{"@type":"Organization","name":"Norprog","logo":{"@type":"ImageObject","url":"https://norprog.no/images/logo.png"}},"datePublished":"2025-06-02","inLanguage":"nb-NO","url":"https://norprog.no/mobiloptimalisering.html"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hjem","item":"https://norprog.no/"},{"@type":"ListItem","position":2,"name":"Artikler","item":"https://norprog.no/"},{"@type":"ListItem","position":3,"name":"Mobiloptimalisering","item":"https://norprog.no/mobiloptimalisering.html"}]}</script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg:#0b0912;--surface:#130e1f;--border:#1d1730;--border-strong:#2c2248;--text:#ede9ff;--muted:#7d7595;--accent:#9d6fff;--accent-hover:#8656e8;--accent-light:#1d1438;--font:'Outfit',sans-serif; }
+    html { scroll-behavior: smooth; }
+    body { font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased; }
+    nav { position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 2.5rem;display:flex;align-items:center;justify-content:space-between;background:rgba(11,9,18,0.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--border); }
+    .nav-logo { font-size:1.2rem;font-weight:800;color:var(--text);text-decoration:none;letter-spacing:-.03em;display:flex;align-items:center;gap:.5rem; }
+    .nav-logo-img { height:28px;width:auto; }
+    .nav-links { display:flex;align-items:center;gap:2.25rem;list-style:none; }
+    .nav-links a { font-size:.88rem;font-weight:500;color:var(--muted);text-decoration:none;transition:color .2s; }
+    .nav-links a:hover { color:var(--text); }
+    .nav-cta { background:var(--accent)!important;color:white!important;padding:.5rem 1.2rem;border-radius:4px;font-weight:700!important; }
+    @media(max-width:768px){.nav-links{display:none}nav{padding:1rem 1.25rem}}
+    .breadcrumb { padding:5.5rem 2.5rem 0;max-width:900px;margin:0 auto; }
+    .breadcrumb nav { position:static;background:none;backdrop-filter:none;border:none;padding:0;display:flex;gap:.5rem;align-items:center; }
+    .breadcrumb a,.breadcrumb span { font-size:.78rem;color:var(--muted);text-decoration:none; }
+    .breadcrumb a:hover { color:var(--accent); }
+    .breadcrumb .sep { color:var(--border-strong); }
+    .article-header { max-width:900px;margin:0 auto;padding:2.5rem 2.5rem 0; }
+    .art-category { display:inline-flex;align-items:center;gap:.45rem;background:var(--accent-light);color:var(--accent);font-size:.73rem;font-weight:700;padding:.3rem .85rem;border-radius:100px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:1.5rem; }
+    .art-dot { width:6px;height:6px;background:var(--accent);border-radius:50%;animation:pulse 2.2s ease infinite; }
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.78)}}
+    h1.art-title { font-size:clamp(2rem,5vw,3.25rem);font-weight:900;letter-spacing:-.045em;line-height:1.06;margin-bottom:1.25rem; }
+    h1.art-title em { font-style:normal;color:var(--accent); }
+    .art-intro { font-size:1.15rem;color:var(--muted);line-height:1.75;margin-bottom:2rem;max-width:70ch; }
+    .art-meta { display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;padding:1.25rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-bottom:3rem; }
+    .art-meta-item { display:flex;align-items:center;gap:.5rem;font-size:.82rem;color:var(--muted); }
+    .art-meta-item svg { color:var(--accent);flex-shrink:0; }
+    .art-meta-item strong { color:var(--text);font-weight:600; }
+    .hero-img-wrap { max-width:900px;margin:0 auto 3.5rem;padding:0 2.5rem; }
+    .hero-img-wrap img { width:100%;aspect-ratio:16/7;object-fit:cover;display:block;border:1px solid var(--border); }
+    .img-caption { font-size:.75rem;color:var(--muted);margin-top:.65rem; }
+    .article-body { max-width:900px;margin:0 auto;padding:0 2.5rem;display:grid;grid-template-columns:1fr 280px;gap:5rem;align-items:start; }
+    .article-content { min-width:0; }
+    .article-content h2 { font-size:1.7rem;font-weight:900;letter-spacing:-.04em;line-height:1.12;color:var(--text);margin:3rem 0 1rem;padding-top:1rem;border-top:1px solid var(--border); }
+    .article-content h2:first-child { margin-top:0;border-top:none;padding-top:0; }
+    .article-content h3 { font-size:1.15rem;font-weight:700;letter-spacing:-.025em;color:var(--text);margin:2rem 0 .75rem; }
+    .article-content p { font-size:.98rem;color:rgba(237,233,255,.82);line-height:1.82;margin-bottom:1.35rem; }
+    .article-content strong { color:var(--text);font-weight:700; }
+    .article-content a { color:var(--accent);text-decoration:underline;text-underline-offset:3px; }
+    .article-content ul { margin:1rem 0 1.5rem 1.5rem;display:flex;flex-direction:column;gap:.6rem; }
+    .article-content li { font-size:.97rem;color:rgba(237,233,255,.8);line-height:1.72; }
+    .article-content li::marker { color:var(--accent); }
+    .inline-img { margin:2.5rem 0; }
+    .inline-img img { width:100%;aspect-ratio:16/9;object-fit:cover;display:block;border:1px solid var(--border); }
+    .inline-img .img-caption { font-size:.75rem;color:var(--muted);margin-top:.65rem; }
+    .article-content blockquote { border-left:3px solid var(--accent);background:var(--accent-light);padding:1.25rem 1.5rem;margin:2rem 0;border-radius:0 4px 4px 0; }
+    .article-content blockquote p { color:var(--text);font-size:1.02rem;font-style:italic;margin:0;line-height:1.7; }
+    .article-content blockquote cite { display:block;font-size:.78rem;color:var(--muted);margin-top:.65rem;font-style:normal; }
+    .tip-box { background:rgba(157,111,255,.08);border:1px solid rgba(157,111,255,.25);padding:1.25rem 1.5rem;margin:2rem 0; }
+    .tip-box .tip-label { font-size:.72rem;font-weight:800;color:var(--accent);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.6rem; }
+    .tip-box p { font-size:.92rem;color:rgba(237,233,255,.8);line-height:1.7;margin:0; }
+    .key-list { list-style:none;margin:1rem 0 1.5rem 0!important; }
+    .key-list li { display:flex;align-items:flex-start;gap:.75rem;padding:.65rem 0;border-bottom:1px solid var(--border); }
+    .key-list li:last-child { border-bottom:none; }
+    .key-list li::marker { display:none; }
+    .key-icon { flex-shrink:0;width:20px;height:20px;background:var(--accent-light);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:.1rem; }
+    .key-icon svg { color:var(--accent); }
+    .warning-box { background:rgba(248,113,113,.07);border:1px solid rgba(248,113,113,.25);padding:1.25rem 1.5rem;margin:2rem 0; }
+    .warning-box .warning-label { font-size:.72rem;font-weight:800;color:#f87171;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.6rem; }
+    .warning-box p { font-size:.92rem;color:rgba(237,233,255,.8);line-height:1.7;margin:0; }
+    .article-sidebar { position:sticky;top:6rem;display:flex;flex-direction:column;gap:1.5rem; }
+    .sidebar-toc { background:var(--surface);border:1px solid var(--border);padding:1.5rem; }
+    .sidebar-toc h4 { font-size:.72rem;font-weight:800;color:var(--accent);letter-spacing:.08em;text-transform:uppercase;margin-bottom:1rem; }
+    .toc-list { list-style:none;display:flex;flex-direction:column;gap:.5rem; }
+    .toc-list a { font-size:.84rem;color:var(--muted);text-decoration:none;transition:color .2s;line-height:1.4;display:block; }
+    .toc-list a:hover { color:var(--text); }
+    .sidebar-cta { background:linear-gradient(145deg,#2a1660,#4a1d96);border:1px solid #6b35d4;padding:1.75rem; }
+    .sidebar-cta h4 { font-size:1rem;font-weight:800;color:white;letter-spacing:-.02em;margin-bottom:.65rem; }
+    .sidebar-cta p { font-size:.84rem;color:rgba(255,255,255,.6);line-height:1.65;margin-bottom:1.25rem; }
+    .sidebar-cta a { display:block;text-align:center;background:white;color:#0b0912;padding:.75rem 1.25rem;font-weight:700;font-size:.88rem;text-decoration:none;transition:background .2s; }
+    .sidebar-cta a:hover { background:var(--accent-light);color:var(--accent); }
+    .article-cta { max-width:900px;margin:5rem auto 0;padding:0 2.5rem 7rem; }
+    .cta-card { background:linear-gradient(135deg,#1a0f3a,#2e1a7a);border:1px solid #3d2580;padding:3.5rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center; }
+    .cta-card h2 { font-size:1.75rem;font-weight:900;letter-spacing:-.04em;color:white;line-height:1.1;margin-bottom:.75rem; }
+    .cta-card p { font-size:.95rem;color:rgba(255,255,255,.55);line-height:1.7; }
+    .cta-btn { display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:white;padding:.9rem 2rem;font-weight:700;font-size:.94rem;text-decoration:none;white-space:nowrap;transition:background .2s; }
+    .cta-btn:hover { background:var(--accent-hover); }
+    footer { padding:2rem 2.5rem;border-top:1px solid var(--border); }
+    .footer-inner { max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem; }
+    .footer-logo { font-size:1rem;font-weight:800;color:var(--text);text-decoration:none;letter-spacing:-.03em;display:flex;align-items:center;gap:.4rem; }
+    .footer-logo-img { height:22px;width:auto; }
+    .footer-copy { font-size:.8rem;color:var(--muted); }
+    .footer-links { display:flex;gap:1.5rem;list-style:none; }
+    .footer-links a { font-size:.8rem;color:var(--muted);text-decoration:none;transition:color .2s; }
+    .footer-links a:hover { color:var(--text); }
+    @media(max-width:900px){.article-body{grid-template-columns:1fr;gap:0}.article-sidebar{position:static;order:-1}.sidebar-toc{display:none}.cta-card{grid-template-columns:1fr;gap:2rem}}
+    @media(max-width:600px){.breadcrumb,.article-header,.hero-img-wrap,.article-body,.article-cta{padding-left:1.25rem;padding-right:1.25rem}h1.art-title{font-size:1.9rem}.cta-card{padding:2rem}footer{padding:1.75rem 1.25rem}.footer-inner{flex-direction:column;text-align:center}}
+  </style>
+</head>
+<body>
+<nav aria-label="Hovedmeny">
+  <a href="/" class="nav-logo"><img src="images/logo.png" alt="Norprog logo" class="nav-logo-img" width="28" height="28" decoding="async">norprog</a>
+  <ul class="nav-links">
+    <li><a href="/#priser">Priser</a></li><li><a href="/#om-oss">Om oss</a></li><li><a href="/#prosess">Prosess</a></li><li><a href="/#faq">FAQ</a></li>
+    <li><a href="/#kontakt" class="nav-cta">Kom i gang</a></li>
+  </ul>
+</nav>
+<div class="breadcrumb"><nav aria-label="Brødsmulesti"><a href="/">Hjem</a><span class="sep" aria-hidden="true">›</span><a href="/">Artikler</a><span class="sep" aria-hidden="true">›</span><span aria-current="page">Mobiloptimalisering</span></nav></div>
+<header class="article-header">
+  <div class="art-category"><span class="art-dot" aria-hidden="true"></span> Mobil &amp; SEO</div>
+  <h1 class="art-title">Hva er egentlig<br>god <em>mobiloptimalisering?</em></h1>
+  <p class="art-intro">Google bruker mobilversjonen av nettsiden din — ikke desktop — for å bestemme rangeringen din i søk. Det har de gjort siden 2019. Her er hva det betyr i praksis, og hva som skjer om du ignorerer det.</p>
+  <div class="art-meta">
+    <div class="art-meta-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>7 min lesetid</span></div>
+    <div class="art-meta-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>2. juni 2025</span></div>
+    <div class="art-meta-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Av <strong>Norprog</strong></span></div>
+    <div class="art-meta-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><span>Kilde: <a href="https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing" target="_blank" rel="noopener" style="color:white">Google Search Central</a></span></div>
+  </div>
+</header>
+<div class="hero-img-wrap">
+  <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1400&q=85&auto=format&fit=crop" alt="Person som holder smarttelefon og ser på en nettside" width="1400" height="613" loading="eager" decoding="async">
+  <p class="img-caption">Over 60 % av all nettrafikk kommer fra mobiltelefoner. Google reflekterer dette ved å indeksere mobilversjonen av alle nettsider først. Foto: Unsplash</p>
+</div>
+<div class="article-body">
+  <article class="article-content">
+
+    <h2 id="hva-er-mobil-first">Hva betyr «mobile-first indexing»?</h2>
+    <p>I 2019 innførte Google det de kaller <strong>mobile-first indexing</strong>. Det betyr at Googles roboter primært bruker mobilversjonen av nettstedet ditt — ikke desktop-versjonen — når de skal forstå, indeksere og rangere innholdet ditt.</p>
+    <p>Årsaken er enkel: over 60 % av alle søk på Google skjer fra mobiltelefoner. Det er derfor logisk at Google evaluerer sidene slik de faktisk ser ut for flertallet av brukerne.</p>
+
+    <blockquote>
+      <p>"Google anbefaler responsive webdesign fordi det er det enkleste designmønsteret å implementere og vedlikeholde."</p>
+      <cite>— Google Search Central, Mobile-First Indexing</cite>
+    </blockquote>
+
+    <div class="warning-box">
+      <div class="warning-label">Viktig å vite</div>
+      <p>Har du en nettside som ser fin ut på desktop men er vanskelig å bruke på mobil, kan du tape store rangeringer — selv om desktopversjonen er perfekt. Google bedømmer deg ut fra mobilopplevelsen.</p>
+    </div>
+
+    <h2 id="responsive-design">Responsive design — hva det betyr i praksis</h2>
+    <p>Google rangerer tre ulike tekniske tilnærminger til mobilvennlighet, og anbefaler én klart over de andre:</p>
+
+    <ul class="key-list">
+      <li><span class="key-icon" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span><div><strong>Responsivt design (anbefalt av Google)</strong> — én kodebase som tilpasser seg alle skjermstørrelser automatisk. Enklest å vedlikeholde og beste signal til Google.</div></li>
+      <li><span class="key-icon" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span><div><strong>Dynamic serving</strong> — serveren leverer ulik HTML avhengig av enhet. Fungerer, men mer komplisert å vedlikeholde.</div></li>
+      <li><span class="key-icon" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span><div><strong>Separate URL-er (m.nettside.no)</strong> — to separate nettsider. Mye arbeid å holde synkronisert og gir økt risiko for feil i Google-indekseringen.</div></li>
+    </ul>
+
+    <div class="inline-img">
+      <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1200&q=80&auto=format&fit=crop" alt="Nettside vist på tre ulike skjermstørrelser — desktop, nettbrett og mobil" width="1200" height="675" loading="lazy" decoding="async">
+      <p class="img-caption">Responsivt design tilpasser automatisk innholdet til alle skjermstørrelser — fra stor desktop til liten mobilskjerm. Foto: Unsplash</p>
+    </div>
+
+    <h2 id="samme-innhold">Mobilversjonen må ha samme innhold</h2>
+    <p>En vanlig feil er å vise forkortet eller begrenset innhold på mobil for å "spare plass". Google er tydelig på at dette er en dårlig idé:</p>
+    <p>Mobilversjonen din må inneholde <strong>det samme primærinnholdet som desktopversjonen</strong>. Mangler mobilversjonen tekst, bilder eller strukturerte data som finnes på desktop, kan Google bli forvirret om hva siden egentlig handler om — og rangere den lavere.</p>
+    <p>Det gjelder også metadata: titler og metabeskrivelser må være identiske på tvers av versjonene. Har du ulike robots-tagger på mobil og desktop, risikerer du at Google ikke klarer å indeksere siden i det hele tatt.</p>
+
+    <h2 id="hva-google-krever">Hva Google konkret krever</h2>
+
+    <h3>Bilder og media</h3>
+    <p>Google må kunne laste inn alle bilder og videoer på mobilversjonen. Bilder blokkert via robots.txt, eller videoer som krever Flash eller ikke-støttede formater, vil ikke bli indeksert. Bruk standard HTML-tagger (<code style="background:var(--surface);padding:.1rem .35rem;font-family:monospace;font-size:.84rem;border:1px solid var(--border)">&lt;video&gt;</code>, <code style="background:var(--surface);padding:.1rem .35rem;font-family:monospace;font-size:.84rem;border:1px solid var(--border)">&lt;img&gt;</code>) og sørg for at Google-boten har tilgang.</p>
+
+    <h3>Innhold som krever brukerinteraksjon</h3>
+    <p>Google klikker ikke, swiper ikke og skriver ikke noe. Innhold som kun vises etter at brukeren trykker på en knapp, fyller ut et felt eller interagerer med et element, vil <strong>ikke</strong> indekseres. Sørg for at primærinnholdet er synlig uten interaksjon.</p>
+
+    <h3>Reklamens plass</h3>
+    <p>Annonser som tar stor plass øverst på siden på mobil er i strid med Googles Better Ads Standard. Slike nettsider kan straffes i rangeringen. Hold reklame under kontroll, særlig på mobil.</p>
+
+    <div class="inline-img">
+      <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?w=1200&q=80&auto=format&fit=crop" alt="Person som bruker mobiltelefon til å søke på nettet ute i bybildet" width="1200" height="675" loading="lazy" decoding="async">
+      <p class="img-caption">Mobilbrukere søker overalt — på bussen, i butikken, ute på gaten. Nettsiden din må fungere perfekt i alle disse situasjonene. Foto: Unsplash</p>
+    </div>
+
+    <h2 id="test-din-side">Slik tester du din nettside</h2>
+    <p>Google tilbyr gratis verktøy for å sjekke mobiloptimaliseringen din:</p>
+    <ul>
+      <li><strong>Google Search Console</strong> — viser deg konkrete mobil-feil Google finner på siden din</li>
+      <li><strong>PageSpeed Insights</strong> — analyserer hastighet og mobilopplevelse, gir konkrete forbedringsforslag</li>
+      <li><strong>Chrome DevTools</strong> — åpne nettleseren, trykk F12, og velg mobilvisning for å se siden slik en mobil bruker opplever den</li>
+    </ul>
+
+    <div class="tip-box">
+      <div class="tip-label">Rask test</div>
+      <p>Åpne nettsiden din på telefonen din akkurat nå. Kan du lese teksten uten å zoome? Er knappene enkle å trykke på? Laster siden raskt? Hvis svaret på ett av disse spørsmålene er "nei", har du et problem Google også ser.</p>
+    </div>
+
+    <h2 id="oppsummering">Oppsummering</h2>
+    <p>Mobiloptimalisering er ikke lenger valgfritt. Siden 2019 er mobilversjonen av nettsiden din det Google bruker som grunnlag for rangering. En nettside som ikke fungerer godt på mobil, rangerer dårlig — uansett hvor bra den ser ut på desktop.</p>
+    <p>Det gode er at riktig gjort fra start — med responsivt design og identisk innhold på alle enheter — trenger du ikke å tenke på det igjen. Det er slik alle nettsider Norprog bygger, fungerer.</p>
+
+  </article>
+  <aside class="article-sidebar" aria-label="Innholdsfortegnelse">
+    <div class="sidebar-toc">
+      <h4>I denne artikkelen</h4>
+      <ul class="toc-list">
+        <li><a href="#hva-er-mobil-first">Hva er mobile-first indexing?</a></li>
+        <li><a href="#responsive-design">Responsive design</a></li>
+        <li><a href="#samme-innhold">Samme innhold på mobil</a></li>
+        <li><a href="#hva-google-krever">Hva Google krever</a></li>
+        <li><a href="#test-din-side">Test din nettside</a></li>
+        <li><a href="#oppsummering">Oppsummering</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-cta">
+      <h4>Vil du ha en mobiloptimalisert nettside?</h4>
+      <p>Alle nettsider vi bygger er responsive og testet på mobil fra dag én. Fra 3 995,-.</p>
+      <a href="/#kontakt">Få et gratis tilbud &rarr;</a>
+    </div>
+  </aside>
+</div>
+<div class="article-cta">
+  <div class="cta-card">
+    <div>
+      <h2>Trenger du en nettside som fungerer på alle enheter?</h2>
+      <p>Norprog bygger skreddersydde nettsider med responsivt design, mobiloptimalisering og Google-godkjent struktur — fra dag én. Fastpris fra 3 995,-.</p>
+    </div>
+    <a href="/#kontakt" class="cta-btn">Kom i gang<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+  </div>
+</div>
+<footer><div class="footer-inner"><a href="/" class="footer-logo"><img src="images/logo.png" alt="Norprog logo" class="footer-logo-img" width="22" height="22" decoding="async">norprog</a><p class="footer-copy">&copy; 2025 Norprog. Org.nr. 837 723 442</p><ul class="footer-links"><li><a href="/#priser">Priser</a></li><li><a href="/#kontakt">Kontakt</a></li><li><a href="mailto:hei@norprog.no">hei@norprog.no</a></li></ul></div></footer>
+</body>
+</html>
