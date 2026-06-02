@@ -830,7 +830,6 @@
       <p class="cta-note"><a href="mailto:hei@norprog.no" style="color:inherit;text-decoration:none;">hei@norprog.no</a> &nbsp;·&nbsp; <a href="tel:+4741406204" style="color:inherit;text-decoration:none;">+47 414 06 204</a></p>
     </div>
     <div>
-      <div data-fs-success class="form-success">Takk! Vi svarer deg innen 24 timer. 🎉</div>
       <form id="contact-form" class="contact-form" novalidate>
         <div class="form-row">
           <div>
@@ -1468,9 +1467,48 @@
 </div>
 
 <script>
-  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-  formspree('initForm', { formElement: '#contact-form', formId: 'mnjrnngj' });
+  document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('[type="submit"]');
+
+    // Clear previous errors
+    form.querySelectorAll('[aria-invalid="true"]').forEach(el => el.removeAttribute('aria-invalid'));
+    form.querySelectorAll('[data-fs-error]').forEach(el => el.textContent = '');
+
+    // Validate required fields
+    let valid = true;
+    form.querySelectorAll('[data-fs-field]').forEach(field => {
+      if (!field.value.trim()) {
+        field.setAttribute('aria-invalid', 'true');
+        const err = form.querySelector('[data-fs-error="' + field.name + '"]');
+        if (err) err.textContent = 'Dette feltet er påkrevd.';
+        valid = false;
+      }
+    });
+    if (!valid) return;
+
+    btn.disabled = true;
+    btn.textContent = 'Sender...';
+
+    try {
+      const res = await fetch('https://formspree.io/f/mnjrnngj', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      });
+      if (res.ok) {
+        window.location.href = '/takk.html';
+      } else {
+        throw new Error();
+      }
+    } catch {
+      const globalErr = form.querySelector('[data-fs-error]:not([data-fs-error="navn"]):not([data-fs-error="email"]):not([data-fs-error="melding"])');
+      if (globalErr) globalErr.textContent = 'Noe gikk galt. Prøv igjen eller send e-post til hei@norprog.no.';
+      btn.disabled = false;
+      btn.textContent = 'Send melding';
+    }
+  });
 </script>
-<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
