@@ -2,7 +2,7 @@
 # ---- Stage 1: tiny build context (just to get a clean copy with --link semantics) ----
 FROM alpine:3.20 AS prep
 WORKDIR /site
-COPY index.html robots.txt sitemap.xml llms.txt ./
+COPY *.html robots.txt sitemap.xml llms.txt ./
 COPY images ./images
 
 # ---- Stage 2: nginx serves the static site ----
