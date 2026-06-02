@@ -1,0 +1,63 @@
+# Norprog
+
+> Webbyrå i Oslo som lager skreddersydde nettsider for norske bedrifter til fastpris. Levert på 14 dager med 30 dagers åpent kjøp.
+
+Norprog er et norsk webdesignbyrå basert i Oslo, spesialisert på skreddersydde nettsider for små og mellomstore bedrifter. Vi bygger nettsider fra bunnen av — ingen maler, ingen snarveier. Du snakker alltid direkte med utvikleren som lager nettsiden din.
+
+## Tjenester og priser
+
+- **Skreddersydd nettside**: 3 995,- engangsbetaling (halvpris tilbud; normalt 7 990,-)
+  - Inkluderer: skreddersydd design, mobiloptimalisering, SEO-grunnlag, kontaktskjema
+  - Levert innen 14 dager, garantert
+  - 30 dagers åpent kjøp — full refusjon hvis du ikke er fornøyd
+  - Gratis revisjoner første måned
+- **Hosting og drift**: 99,- per måned (ingen bindingstid)
+  - Rask server, SSL-sertifikat, daglig backup, teknisk support
+- **Nettside med backend (Fullstack)**: Fra 24 995,- engangsbetaling
+  - Skreddersydd frontend og backend, database, API, brukerinnlogging
+- **Mobilapplikasjon**: Fra 39 995,- engangsbetaling
+  - iOS og Android (cross-platform), App Store og Google Play-publisering
+- **Vedlikeholdsavtale**: Månedlig, pris etter avtale
+  - Innholdsoppdateringer, teknisk vedlikehold, prioritert support
+
+## Prosess
+
+1. Samtale — kort prat om behov og mål
+2. Design — utkast med gratis justeringer
+3. Bygging — nettsiden settes opp
+4. Lansering — publisert på ditt domene innen 14 dager
+
+## Nøkkelinformasjon
+
+- **Sted**: Oslo, Norge
+- **Betjener**: Hele Norge (jobber digitalt)
+- **Språk**: Norsk og engelsk
+- **Kontakt**: hei@norprog.no | +47 414 06 204
+- **Org.nr**: 837 723 442
+- **Betaling**: Faktura (EHF/PDF) etter levering — alle priser eks. mva.
+
+## Eksempelprosjekter
+
+- Skattekisten Barnehage — skattekisten.net
+- Unveil (dating-app) — unveil.chat
+- Fiberkabel Bedrift — fiberkabel.no
+
+## Ofte stilte spørsmål
+
+**Hva er inkludert i prisen på 3 995,-?**
+Alt du trenger for å komme i gang: skreddersydd design, mobiloptimalisering, kontaktskjema, SEO-grunnlag og oppsett på ditt domene. Ingen skjulte kostnader — én faktura etter levering.
+
+**Hvor lang tid tar det å lage en nettside?**
+14 dager fra første samtale til ferdig nettside, garantert.
+
+**Holder dere til i Oslo, og jobber dere med bedrifter over hele Norge?**
+Ja, vi er basert i Oslo, men jobber med bedrifter over hele Norge. Alt foregår digitalt — e-post, telefon eller video.
+
+**Hva koster hosting?**
+Hosting koster 99,- per måned og inkluderer rask server, SSL, daglig backup og teknisk support. Ingen bindingstid.
+
+**Hva skjer hvis jeg ikke er fornøyd?**
+Vi tilbyr 30 dagers åpent kjøp — full refusjon uten spørsmål.
+
+**Kan jeg oppdatere innholdet selv etter levering?**
+Ja. Vi setter opp nettsiden slik at du enkelt kan endre tekst, bilder og innhold selv.

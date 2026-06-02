@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://norprog.no/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://norprog.no/images/hero-portfolio.png</image:loc>
+      <image:title>Skreddersydde nettsider av Norprog — webbyrå i Oslo</image:title>
+      <image:caption>Eksempler på nettsider levert av Norprog til norske bedrifter</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://norprog.no/images/proj-skattekisten.jpg</image:loc>
+      <image:title>Skattekisten Barnehage — nettside laget av Norprog</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://norprog.no/images/proj-unveil.jpg</image:loc>
+      <image:title>Unveil — nettside laget av Norprog</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://norprog.no/images/proj-fiberkabel.jpg</image:loc>
+      <image:title>Fiberkabel Bedrift — nettside laget av Norprog</image:title>
+    </image:image>
+  </url>
+</urlset>

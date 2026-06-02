@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://norprog.no/sitemap.xml
+
+# AI crawlers: machine-readable site summary
+# https://norprog.no/llms.txt
